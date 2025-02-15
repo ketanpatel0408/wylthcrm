@@ -142,8 +142,8 @@ const renderOptions = (managers, selected, handleCheckboxChange, level = 0) => {
     const imageUrl = manager.imageUrl || "";
 
     return (
-      <div className="relative">
-        <div key={manager.id} style={beforePadding} className={`border-b-[1px] ${isChecked ? "bg-blue-100" : "bg-white"} ${level === 0 ? "pl-3" : ""}`}>
+      <div key={manager.id} className="relative">
+        <div style={beforePadding} className={`border-b-[1px] ${isChecked ? "bg-blue-100" : "bg-white"} ${level === 0 ? "pl-3" : ""}`}>
           <span className="absolute" style={dashedLineBefore}></span>
 
           <MenuItem className="!pr-2" value={manager.id} onClick={(e) => e.stopPropagation()}>
@@ -281,7 +281,7 @@ const MultiLevelRMSelect = () => {
   };
 
   return (
-    <div className="w-[300px]">
+    <div className="w-full">
       <FormControl fullWidth>
         <InputLabel>Relationship Manager</InputLabel>
         <Select
