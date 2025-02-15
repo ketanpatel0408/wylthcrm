@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Collapse } from '@mui/material';
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, Collapse, useMediaQuery } from '@mui/material';
 import { useSidebar } from './SidebarContext';
 
 const menuItems = [
@@ -23,6 +23,11 @@ const menuItems = [
                 ],
             },
         ],
+    },
+    {
+        title: 'Menu Management',
+        icon: 'fas fa-hammer',
+        path: '/menumanagement',
     },
 ];
 
@@ -82,15 +87,18 @@ const RecursiveMenuItem = ({ item, level = 0 }) => {
 
 const Sidebar = () => {
     const { checked, setChecked, hovered, setHovered } = useSidebar();
+    const isMobileTablet = useMediaQuery('(max-width:960px)');
 
     return (
-        <div>
-            {(checked || hovered) && (
-                <span
-                    className="fixed top-0 left-0 w-full h-full bg-blue-50 opacity-50 z-[1011] block md:hidden"
-                    onClick={() => setChecked(false)}
-                ></span>
-            )}
+        <div className={`${isMobileTablet ? "relative z-[1100]" : ""}`}>
+            {isMobileTablet &&
+                (checked || hovered) && (
+                    <span
+                        className="fixed top-0 left-0 w-full h-full bg-blue-50 opacity-50 z-[1011] block md:hidden"
+                        onClick={() => setChecked(false)}
+                    ></span>
+                )
+            }
 
             <Drawer
                 variant="permanent"
