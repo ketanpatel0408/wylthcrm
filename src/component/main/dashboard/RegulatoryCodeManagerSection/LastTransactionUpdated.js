@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 const LastTransactionUpdated = () => {
     return (
-        <div className="w-full xl:col-span-2">
+        <div className="w-full">
             <Box className="md:text-right">
                 <Typography
                     variant="body2"
