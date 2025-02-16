@@ -29,6 +29,11 @@ const menuItems = [
         icon: 'fas fa-hammer',
         path: '/menumanagement',
     },
+    {
+        title: 'Color Implementation',
+        icon: 'fas fa-palette',
+        path: '/colorimplementation',
+    },
 ];
 
 const RecursiveMenuItem = ({ item, level = 0 }) => {
