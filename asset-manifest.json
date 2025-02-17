@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/wylthcrm/static/css/main.6396b33f.css",
+    "main.js": "/wylthcrm/static/js/main.95899397.js",
+    "static/js/511.ec0199c5.chunk.js": "/wylthcrm/static/js/511.ec0199c5.chunk.js",
+    "static/media/Rubik-Medium.woff2": "/wylthcrm/static/media/Rubik-Medium.21d4ef26380e5f3aa427.woff2",
+    "static/media/Rubik-Bold.woff2": "/wylthcrm/static/media/Rubik-Bold.696399026f1b05d2bd38.woff2",
+    "static/media/Rubik-Regular.woff2": "/wylthcrm/static/media/Rubik-Regular.23f7d95c5d6e291c1583.woff2",
+    "static/media/Rubik-ExtraBold.woff2": "/wylthcrm/static/media/Rubik-ExtraBold.5b5a03dd0710723652f3.woff2",
+    "static/media/Rubik-SemiBold.woff2": "/wylthcrm/static/media/Rubik-SemiBold.1f849b0b55b855820253.woff2",
+    "static/media/Rubik-Light.woff2": "/wylthcrm/static/media/Rubik-Light.a5f6c2c7e948b1b662b4.woff2",
+    "static/media/Rubik-Medium.woff": "/wylthcrm/static/media/Rubik-Medium.30f0533de2657973e9bf.woff",
+    "static/media/Rubik-Bold.woff": "/wylthcrm/static/media/Rubik-Bold.c4aa23eecb6337fd975b.woff",
+    "static/media/Rubik-SemiBold.woff": "/wylthcrm/static/media/Rubik-SemiBold.4443dc58014f44badb40.woff",
+    "static/media/Rubik-ExtraBold.woff": "/wylthcrm/static/media/Rubik-ExtraBold.e7b6b0550cc31059f699.woff",
+    "static/media/Rubik-Regular.woff": "/wylthcrm/static/media/Rubik-Regular.e6cfcd57d6bb36469b71.woff",
+    "static/media/Rubik-Light.woff": "/wylthcrm/static/media/Rubik-Light.4bfe1c6bc30fbb2a13bf.woff",
+    "static/media/Rubik-Black.woff": "/wylthcrm/static/media/Rubik-Black.c6c13dc40bf8ef5fa0b4.woff",
+    "static/media/Rubik-Black.woff2": "/wylthcrm/static/media/Rubik-Black.719ef807db6822a293f7.woff2",
+    "index.html": "/wylthcrm/index.html",
+    "main.6396b33f.css.map": "/wylthcrm/static/css/main.6396b33f.css.map",
+    "main.95899397.js.map": "/wylthcrm/static/js/main.95899397.js.map",
+    "511.ec0199c5.chunk.js.map": "/wylthcrm/static/js/511.ec0199c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6396b33f.css",
+    "static/js/main.95899397.js"
+  ]
+}
