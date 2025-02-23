@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wylthcrm/static/css/main.6396b33f.css",
-    "main.js": "/wylthcrm/static/js/main.95899397.js",
+    "main.css": "/wylthcrm/static/css/main.3965133e.css",
+    "main.js": "/wylthcrm/static/js/main.61c75f20.js",
     "static/js/511.ec0199c5.chunk.js": "/wylthcrm/static/js/511.ec0199c5.chunk.js",
     "static/media/Rubik-Medium.woff2": "/wylthcrm/static/media/Rubik-Medium.21d4ef26380e5f3aa427.woff2",
     "static/media/Rubik-Bold.woff2": "/wylthcrm/static/media/Rubik-Bold.696399026f1b05d2bd38.woff2",
@@ -18,12 +18,12 @@
     "static/media/Rubik-Black.woff": "/wylthcrm/static/media/Rubik-Black.c6c13dc40bf8ef5fa0b4.woff",
     "static/media/Rubik-Black.woff2": "/wylthcrm/static/media/Rubik-Black.719ef807db6822a293f7.woff2",
     "index.html": "/wylthcrm/index.html",
-    "main.6396b33f.css.map": "/wylthcrm/static/css/main.6396b33f.css.map",
-    "main.95899397.js.map": "/wylthcrm/static/js/main.95899397.js.map",
+    "main.3965133e.css.map": "/wylthcrm/static/css/main.3965133e.css.map",
+    "main.61c75f20.js.map": "/wylthcrm/static/js/main.61c75f20.js.map",
     "511.ec0199c5.chunk.js.map": "/wylthcrm/static/js/511.ec0199c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6396b33f.css",
-    "static/js/main.95899397.js"
+    "static/css/main.3965133e.css",
+    "static/js/main.61c75f20.js"
   ]
 }
