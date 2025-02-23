@@ -97,7 +97,6 @@ const Navbar = () => {
               <CustomTooltip title="Notification">
                 <Link
                   onClick={handleClick}
-                  to=""
                   className="block py-2 px-1 md:pr-2 text-white rounded-sm md:bg-transparent dark:text-white"
                   aria-current="page"
                 >

@@ -39,23 +39,23 @@ const NotificationList = ({ notifications, setNotifications, unreadCount, setUnr
 
                     <div className="max-h-72 overflow-auto">
                         {notifications.length === 0 ? (
-                            <Typography variant="body2" className="text-center text-gray-500 py-4">
+                            <Typography variant="body2" className="text-center text-gray-600 py-4">
                                 No Notifications
                             </Typography>
                         ) : (
                             notifications.map((notification) => (
-                                <Box key={notification.id} className={`notification__item mb-2 p-2 ${notification.isRead ? "bg-gray-100" : "bg-blue-50"}`} sx={{ borderRadius: 1 }}>
+                                <Box key={notification.id} className={`notification__item border-b mb-2 p-2 ${notification.isRead ? "bg-white" : "bg-blue-500"}`} sx={{ borderRadius: 1 }}>
                                     <div className="flex items-start space-x-2">
                                         <div className="text-green-500">
                                             <i className="fas fa-check-circle"></i>
                                         </div>
                                         <div className="flex-1">
-                                            <Typography variant="body2" className="font-semibold">{notification.title}</Typography>
-                                            <Typography variant="body2" className="text-sm text-gray-600">{notification.message}</Typography>
-                                            <Typography variant="caption" className="text-gray-500 text-right">{notification.time}</Typography>
+                                            <Typography variant="body2" className={`font-semibold ${notification.isRead ? "text-black" : "text-white"}`}>{notification.title}</Typography>
+                                            <Typography variant="body2" className={`text-sm ${notification.isRead ? "text-gray-600" : "text-gray-200"}`}>{notification.message}</Typography>
+                                            <Typography variant="caption" className={`text-right ${notification.isRead ? "text-gray-600" : "text-gray-200"}`}>{notification.time}</Typography>
                                         </div>
                                         <Button
-                                            className="remove-notification !text-blue-900 !min-w-5"
+                                            className={`remove-notification ${notification.isRead ? "text-blue-900" : "text-white"} !min-w-5`}
                                             size="small"
                                             onClick={() => removeNotification(notification.id)}
                                         >
@@ -68,8 +68,8 @@ const NotificationList = ({ notifications, setNotifications, unreadCount, setUnr
                     </div>
 
                     {notifications.length > 0 && (
-                        <div className="border-t pt-2">
-                            <Link to="/Notification/Index" className="w-full text-center block text-blue-600">
+                        <div className="pt-2">
+                            <Link to="/Notification/Index" className="w-full text-center block text-blue-500">
                                 View All
                             </Link>
                         </div>

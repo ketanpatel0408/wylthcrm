@@ -17,6 +17,17 @@ body {
 .bg-blue-800 { background-color: var(--blue-800) !important; }
 .bg-blue-900 { background-color: var(--blue-900) !important; }
 
+.text-blue-50 { color: var(--blue-50) !important; }
+.text-blue-100 { color: var(--blue-100) !important; }
+.text-blue-200 { color: var(--blue-200) !important; }
+.text-blue-300 { color: var(--blue-300) !important; }
+.text-blue-400 { color: var(--blue-400) !important; }
+.text-blue-500 { color: var(--blue-500) !important; }
+.text-blue-600 { color: var(--blue-600) !important; }
+.text-blue-700 { color: var(--blue-700) !important; }
+.text-blue-800 { color: var(--blue-800) !important; }
+.text-blue-900 { color: var(--blue-900) !important; }
+
 .bg-white { background-color: var(--white) !important; }
 .text-white { color: var(--white) !important; }
 
