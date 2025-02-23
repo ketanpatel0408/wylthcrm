@@ -9,7 +9,7 @@ const NestedTable = ({ data, depth = 0 }) => {
         <TableContainer className="border rounded-lg">
             <Table size="small" className="w-full">
                 {!depth === 0 && (
-                    <TableHead className="bg-gray-50">
+                    <TableHead className="bg-gray-100">
                         <TableRow>
                             <TableCell>Menu Items</TableCell>
                             <TableCell align="right">Status</TableCell>
@@ -21,7 +21,7 @@ const NestedTable = ({ data, depth = 0 }) => {
                         const hasChildren = row.children?.length > 0;
                         return (
                             <React.Fragment key={row.id}>
-                                <TableRow className={`${depth % 2 === 0 ? `${depth === 0 ? "bg-blue-700" : "bg-white"}` : "bg-gray-50"} `}>
+                                <TableRow className={`${depth % 2 === 0 ? `${depth === 0 ? "bg-blue-500" : "bg-white"}` : "bg-gray-100"} `}>
                                     <TableCell style={{ paddingLeft: `${16 + depth * 1}px` }}>
                                         <div className={`flex items-center ${depth === 0 && "text-[16px] font-semibold text-white"}`}>{row.name}</div>
                                     </TableCell>

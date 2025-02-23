@@ -20,7 +20,7 @@ const RegulatoryCodeManagerSection = () => {
     };
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-2 gap-4 p-[20px] bg-gray-50 border-b-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-2 gap-4 p-[20px] bg-gray-100 border-b-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className={`${findMenuItem("Code (ARN/RIA)", menuData)?.active ? "block" : "hidden"}`}>
                     <AlertProvider>

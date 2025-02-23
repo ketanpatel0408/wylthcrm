@@ -43,7 +43,7 @@ const Navbar = () => {
                 <label className="inline-flex items-center cursor-pointer h-12 relative ml-3 mr-5">
                   <input type="checkbox" className="sr-only peer" checked={checked} onChange={() => setChecked(!checked)} />
                   <div className={`relative w-7 h-4 rounded-full transition-all  peer-focus:outline-none border border-gray-500 ${checked ? "bg-gray-100" : "bg-gray-100"}`}>
-                    <div className={`absolute top-[1px] start-[2px] h-3 w-3 border border-gray-300 rounded-full transition-all ${checked ? "translate-x-full rtl:-translate-x-full bg-black" : "bg-gray-300"}`}></div>
+                    <div className={`absolute top-[1px] start-[2px] h-3 w-3 border border-gray-300 rounded-full transition-all ${checked ? "translate-x-full rtl:-translate-x-full bg-blue-500" : "bg-gray-200"}`}></div>
                   </div>
                 </label>
               </div>

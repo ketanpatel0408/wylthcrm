@@ -4,7 +4,8 @@ import './index.css';
 import './css/fonts.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GlobalStyles } from '@mui/material';
+import { GlobalStyles, ThemeProvider } from '@mui/material';
+import customTheme from './component/main/ColorImplementation/customTheme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,9 @@ root.render(
         '[class*="Mui"]': { fontFamily: `'Rubik', sans-serif !important` },
       }}
     />
-    <App />
+    <ThemeProvider theme={customTheme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

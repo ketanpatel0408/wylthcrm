@@ -41,10 +41,10 @@ const RecursiveMenuItem = ({ item, level = 0 }) => {
     const hasChildren = item.children && item.children.length > 0;
 
     const paddingMap = {
-        0: '',
-        1: '!pl-8 !bg-blue-700',
-        2: '!pl-10 !bg-blue-800',
-        3: '!pl-20 !bg-blue-900',
+        0: 'bg-blue-500',
+        1: '!pl-8 bg-blue-600',
+        2: '!pl-10 bg-blue-700',
+        3: '!pl-20 bg-blue-800',
     };
 
     const handleToggle = () => {
@@ -66,13 +66,13 @@ const RecursiveMenuItem = ({ item, level = 0 }) => {
                         <i className={`${item.icon} text-white`} />
                     </ListItemIcon>
                 )}
-                {checked || hovered ? <ListItemText primary={<span className="truncate w-full block">{item.title}</span>} /> : ""}
+                {checked || hovered ? <ListItemText primary={<span className="truncate w-full block text-white">{item.title}</span>} /> : ""}
                 {hasChildren && (
                     (checked || hovered) ? (
                         open ? (
-                            <i className="far fa-chevron-down ml-2 text-xs" />
+                            <i className="far fa-chevron-down ml-2 text-xs text-white" />
                         ) : (
-                            <i className="far fa-chevron-right ml-2 text-xs" />
+                            <i className="far fa-chevron-right ml-2 text-xs text-white" />
                         )
                     ) : null
                 )}
@@ -111,7 +111,7 @@ const Sidebar = () => {
                     sx: {
                         height: 'calc(100% - 66px)',
                     },
-                    className: `!bg-blue-600 !text-white !top-[66px] !transition-all !duration-300 !ease-in-out ${checked || hovered ? "max-w-[240px] min-w-[240px] left-0" : "!left-[-245px] md:!left-0 max-w-[240px] min-w-[240px] md:max-w-[78px] md:min-w-[78px] md:!block"
+                    className: `bg-blue-500 !text-white !top-[66px] !transition-all !duration-300 !ease-in-out ${checked || hovered ? "max-w-[240px] min-w-[240px] left-0" : "!left-[-245px] md:!left-0 max-w-[240px] min-w-[240px] md:max-w-[78px] md:min-w-[78px] md:!block"
                         }`
                 }}
                 onMouseEnter={() => setHovered(true)}

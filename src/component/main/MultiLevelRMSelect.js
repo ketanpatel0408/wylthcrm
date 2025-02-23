@@ -347,7 +347,7 @@ const MultiLevelRMSelect = () => {
               variant="contained"
               color="primary"
               onClick={handleApplyClick}
-              className="mt-4 !bg-blue-700"
+              className="mt-4"
             >
               Apply
             </Button>

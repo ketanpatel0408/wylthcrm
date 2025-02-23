@@ -18,21 +18,33 @@ const NotificationList = ({ notifications, setNotifications, unreadCount, setUnr
         setUnreadCount(0);
     };
 
+    const removeNotification = (id) => {
+        setNotifications((prevNotifications) =>
+            prevNotifications.filter((n) => n.id !== id)
+        );
+    };
+
     return (
         <Popper open={Boolean(anchorEl)} anchorEl={anchorEl} placement="bottom-end" className="z-[9999]">
             <ClickAwayListener onClickAway={handleClose}>
                 <Paper sx={{ minWidth: 300, borderRadius: 2, boxShadow: 3 }} className="bg-white p-2">
                     <div className="flex justify-between border-b pb-2 mb-2">
                         <Typography variant="h6">Notifications</Typography>
-                        <Button onClick={markAllAsRead} variant="outlined" size="small">
-                            Mark All Read
-                        </Button>
+                        {unreadCount > 0 && (
+                            <Button onClick={markAllAsRead} variant="outlined" size="small">
+                                Mark All Read
+                            </Button>
+                        )}
                     </div>
 
                     <div className="max-h-72 overflow-auto">
-                        {notifications.map((notification) => (
-                            <Box key={notification.id} className={`notification__item mb-2 p-2 ${notification.isRead ? "bg-gray-100" : "bg-blue-100"}`} sx={{ borderRadius: 1 }}>
-                                <Link to={`/Notification/${notification.id}`} className="notification__link">
+                        {notifications.length === 0 ? (
+                            <Typography variant="body2" className="text-center text-gray-500 py-4">
+                                No Notifications
+                            </Typography>
+                        ) : (
+                            notifications.map((notification) => (
+                                <Box key={notification.id} className={`notification__item mb-2 p-2 ${notification.isRead ? "bg-gray-100" : "bg-blue-50"}`} sx={{ borderRadius: 1 }}>
                                     <div className="flex items-start space-x-2">
                                         <div className="text-green-500">
                                             <i className="fas fa-check-circle"></i>
@@ -42,18 +54,26 @@ const NotificationList = ({ notifications, setNotifications, unreadCount, setUnr
                                             <Typography variant="body2" className="text-sm text-gray-600">{notification.message}</Typography>
                                             <Typography variant="caption" className="text-gray-500 text-right">{notification.time}</Typography>
                                         </div>
-                                        <Button className="remove-notification text-red-500" size="small">
+                                        <Button
+                                            className="remove-notification !text-blue-900 !min-w-5"
+                                            size="small"
+                                            onClick={() => removeNotification(notification.id)}
+                                        >
                                             <i className="far fa-times"></i>
                                         </Button>
                                     </div>
-                                </Link>
-                            </Box>
-                        ))}
+                                </Box>
+                            ))
+                        )}
                     </div>
 
-                    <div className="border-t pt-2">
-                        <Link to="/Notification/Index" className="w-full text-center block text-blue-600">View All</Link>
-                    </div>
+                    {notifications.length > 0 && (
+                        <div className="border-t pt-2">
+                            <Link to="/Notification/Index" className="w-full text-center block text-blue-600">
+                                View All
+                            </Link>
+                        </div>
+                    )}
                 </Paper>
             </ClickAwayListener>
         </Popper>

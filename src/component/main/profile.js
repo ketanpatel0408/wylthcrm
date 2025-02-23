@@ -64,7 +64,7 @@ const ProfileMenu = () => {
                         </div>
                         <div className="ml-3">
                             <h5 className="m-0 text-base font-medium">Jaydeep Patel</h5>
-                            <span className="bg-blue-600 text-white text-xs font-semibold rounded px-2 py-1 mt-1 inline-block">
+                            <span className="bg-blue-500 text-white text-xs font-semibold rounded px-2 py-1 mt-1 inline-block">
                                 Admin
                             </span>
                         </div>
