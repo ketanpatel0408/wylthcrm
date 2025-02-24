@@ -81,6 +81,7 @@ const ColorProvider = ({ children }) => {
         // Generate shades for base color (gray shades)
         const [h2, s2] = hexToHSL(baseColor);
         const grayShades = {
+            50: HSLToHex(h2, s2, 97),
             100: HSLToHex(h2, s2, 95),
             200: HSLToHex(h2, s2, 88),
             300: HSLToHex(h2, s2, 76),

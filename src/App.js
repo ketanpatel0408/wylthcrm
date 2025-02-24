@@ -16,7 +16,7 @@ const Layout = () => {
       <ColorProvider>
         <Navbar />
         <Sidebar />
-        <div style={{ flex: 1 }} className={`pt-[66px] bg-white ${checked ? "md:pl-[240px]" : "md:pl-[78px]"}`}>
+        <div style={{ flex: 1 }} className={`pt-[66px] bg-gray-50 ${checked ? "md:pl-[240px]" : "md:pl-[78px]"}`}>
           <MenuProvider>
             <Routes>
               <Route path="/menumanagement" element={<MenuManagement />} />

@@ -1,6 +1,8 @@
 import React from "react";
 import RegulatoryCodeManagerSection from "./RegulatoryCodeManagerSection/RegulatoryCodeManagerSection";
 import { useMenu } from "../MenuManagement/MenuContext";
+import QuickAccessBox from "./QuickAccessBox";
+import MFTabsNavigation from "./MFTabsNavigation";
 
 const Dashboard = () => {
   const { menuData } = useMenu();
@@ -21,6 +23,12 @@ const Dashboard = () => {
       {findMenuItem("Code Relationship Manager Section", menuData)?.active && (
         <RegulatoryCodeManagerSection />
       )}
+      <div className="px-[20px] pt-[20px] pb-[10px]">
+        <QuickAccessBox />
+      </div>
+      <div className="px-[20px] py-[10px] grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <MFTabsNavigation />
+      </div>
     </div>
   );
 };

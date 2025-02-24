@@ -47,6 +47,69 @@ const customTheme = createTheme({
                 },
             },
         },
+        MuiTab: {
+            styleOverrides: {
+                root: {
+                    '&.Mui-selected': {
+                        backgroundColor: 'var(--white) !important',
+                        fontWeight: '500 !important',
+                    }
+                }
+            }
+        },
+        MuiTabs: {
+            styleOverrides: {
+                indicator: {
+                    display: "none",
+                },
+            },
+        },
+        MuiTabScrollButton: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: 'var(--white)',
+
+                    '&.Mui-disabled': {
+                        display: "none"
+                    }
+                }
+            }
+        },
+        MuiSvgIcon: {
+            styleOverrides: {
+                root: {
+                    Color: 'var(--gray-800)',
+                }
+            }
+        },
+        MuiOutlinedInput: {
+            styleOverrides: {
+                root: {
+                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                        borderColor: "var(--blue-500) !important",
+                    },
+                },
+            },
+        },
+        MuiButtonBase: {
+            styleOverrides: {
+                root: {
+                    '&.Mui-selected': {
+                        color: 'var(--white)',
+                        backgroundColor: 'var(--blue-500) !important',
+                    }
+                }
+            }
+        },
+        MuiFormLabel: {
+            styleOverrides: {
+                root: {
+                    '&.Mui-focused': {
+                        color: 'var(--blue-500)',
+                    }
+                }
+            }
+        }
     },
 });
 
