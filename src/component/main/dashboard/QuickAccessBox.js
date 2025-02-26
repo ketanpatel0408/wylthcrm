@@ -46,7 +46,7 @@ const QuickAccessBox = () => {
                                 item.icon
                             )}
                             {item.dropdown.length > 0 && (
-                                menuType === item.id ? <i class="fas fa-angle-up arrow text-blue-500 text-[14px] absolute top-1/2 right-[-10px] -translate-y-1/2 text-[10px]"></i> : <i class="fas fa-angle-down arrow text-blue-500 text-[14px] absolute top-1/2 right-[-10px] -translate-y-1/2 text-[10px]"></i>
+                                menuType === item.id ? <i className="fas fa-angle-up arrow text-blue-500 text-[14px] absolute top-1/2 right-[-10px] -translate-y-1/2 text-[10px]"></i> : <i className="fas fa-angle-down arrow text-blue-500 text-[14px] absolute top-1/2 right-[-10px] -translate-y-1/2 text-[10px]"></i>
                             )}
                         </IconButton>
                         <span className="text-xs text-blue-500 block mt-1 font-medium">{item.label}</span>

@@ -71,7 +71,7 @@ const MFTxnSummaryContent = () => {
                                         </TableCell>
                                         <TableCell className="!p-2 !text-[12px] !border-none !text-center">
                                             <IconButton size="small" className="text-gray-400">
-                                                <i class="fas fa-eye text-[12px]"></i>
+                                                <i className="fas fa-eye text-[12px]"></i>
                                             </IconButton>
                                         </TableCell>
                                     </TableRow>

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Tabs, Tab, Box } from "@mui/material";
 import MFTxnSummaryContent from "./MFTabsNavigation/MFTxnSummaryContent";
 import CurrFYEarnings from "./MFTabsNavigation/CurrFYEarnings";
+import Performance from "./MFTabsNavigation/Performance";
+import SIPRegActive from "./MFTabsNavigation/SIPRegActive";
 
 const MFTabsNavigation = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -29,8 +31,8 @@ const MFTabsNavigation = () => {
             <Box className="p-4">
                 {activeTab === 0 && <MFTxnSummaryContent /> }
                 {activeTab === 1 && <CurrFYEarnings /> }
-                {activeTab === 2 && <div>Performance Content</div>}
-                {activeTab === 3 && <div>SIP Reg. & Active Content</div>}
+                {activeTab === 2 && <Performance /> }
+                {activeTab === 3 && <SIPRegActive /> }
                 {activeTab === 4 && <div>MF Readiness Content</div>}
             </Box>
         </Box>
